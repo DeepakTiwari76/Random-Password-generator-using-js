@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd232a345a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main"><h2>Password Generator</h2>
+        <div class="output">
+             <input id="password" type="text" placeholder="password" >
+             <img src="Vector (4).png" id="copy" onclick="copytext()" alt="">
+             
+        </div>
+        <div class="lower">
+            <div class="slider">
+                <p>character length</p>
+                <input id="slide" value="0" type="range" min="0" max="10">
+                <span class="number">0</span>
+            </div>
+            <div class="boxs">
+            <input id="one" type="checkbox" > <label for="one"> Include Uppercase Latters</label><br>
+            <input id="two" type="checkbox"> <label for="two"> Include Lowercase Latters</label><br>
+            <input id="three" type="checkbox"> <label for="three"> Include number Latters</label><br>
+            <input id="four" type="checkbox"> <label for="four"> Include Symbol Latters</label>
+            </div>
+            <div class="strenth">
+                    <h3 id="str">STRENGTH</h3>
+            </div>
+            <div class="btn">
+                <button onclick="generator()"  > Generate -></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
