@@ -19,8 +19,8 @@ function generator(){
     let password = "";
     count =0;
 
-    if(lengths.value>=0){
-alert("Please Select The Character length Minimum 4 characters")
+    if(lengths.value<=0){
+alert("Please Select The Character length characters")
     }
    else{
     if(box1.checked==true  ){
